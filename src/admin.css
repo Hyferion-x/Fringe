@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body, .admin-root {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #181E27 0%, #2C2F4A 100%);
+  color: #E5E7EB;
+}
+
+/* Admin Panel Styles */
+.admin-root {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.admin-sidebar {
+  width: 260px;
+  background: #23243A;
+  border-right: 1px solid #23243A;
+  padding: 40px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 24px rgba(85, 34, 204, 0.03);
+  z-index: 2;
+}
+
+.admin-logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 48px;
+  color: #fff;
+  text-align: center;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.admin-nav a {
+  color: #E5E7EB;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.admin-nav a:hover {
+  background: #23243A;
+  color: #30FF99;
+  text-shadow: 0 0 6px #30FF99, 0 0 12px #30FF9933;
+}
+
+.admin-nav a.active {
+  background: #2C2F4A;
+  color: #30FF99;
+  border-left: 3px solid #30FF99;
+  text-shadow: 0 0 8px #30FF99, 0 0 16px #30FF9933;
+}
+
+.admin-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 48px 24px 48px;
+  background: transparent;
+}
+
+.admin-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  color: #30FF99;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 8px #30FF99, 0 0 16px #30FF9933;
+}
+
+.admin-header-user {
+  color: #E5E7EB;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #23243A;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.admin-content-glass {
+  margin: 0 48px 48px 48px;
+  background: #23243A;
+  border: 1px solid #2C2F4A;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(85, 34, 204, 0.03);
+  padding: 32px;
+  color: #E5E7EB;
+  position: relative;
+}
+
+.admin-content-glass h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #30FF99;
+  text-shadow: 0 0 8px #30FF99, 0 0 16px #30FF9933;
+}
+
+.admin-content-glass p {
+  font-size: 1rem;
+  color: #B5B7C0;
+  line-height: 1.6;
+}
+
+/* Glassmorphism Card Styles */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Button Styles */
+.glass-button, .MuiButton-containedPrimary {
+  background: #30FF99;
+  color: #181E27;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 8px #30FF9933;
+  text-shadow: 0 0 4px #30FF99, 0 0 8px #30FF9933;
+}
+
+.glass-button.accent, .MuiButton-containedSecondary {
+  background: #F5197E;
+  color: #fff;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.glass-button:hover, .MuiButton-containedPrimary:hover {
+  background: #1DEB6B;
+  color: #181E27;
+  box-shadow: 0 0 12px #30FF9966;
+}
+
+.glass-button.accent:hover, .MuiButton-containedSecondary:hover {
+  background: #C01365;
+}
+
+.MuiButton-outlinedPrimary {
+  color: #30FF99;
+  border: 1.5px solid #30FF99;
+  background: #23243A;
+  text-shadow: 0 0 4px #30FF99, 0 0 8px #30FF9933;
+}
+
+.MuiButton-outlinedPrimary:hover {
+  background: #2C2F4A;
+}
+
+.Mui-disabled, .MuiButton-disabled {
+  background: #2C2F4A !important;
+  color: #B5B7C0 !important;
+  text-shadow: none !important;
+}
+
+/* Input Styles */
+.glass-input, .MuiInputBase-root {
+  background: #23243A;
+  border: 1px solid #2C2F4A;
+  border-radius: 6px;
+  padding: 10px 16px;
+  color: #E5E7EB;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.glass-input:focus, .MuiInputBase-root.Mui-focused {
+  border-color: #30FF99;
+  outline: none;
+}
+
+.glass-input::placeholder, .MuiInputBase-input::placeholder {
+  color: #B5B7C0;
+  opacity: 1;
+}
+
+/* Table Styles */
+.glass-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #23243A;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.glass-table th,
+.glass-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #2C2F4A;
+}
+
+.glass-table th {
+  background: #2C2F4A;
+  font-weight: 600;
+  color: #30FF99;
+  text-shadow: 0 0 8px #30FF99, 0 0 16px #30FF9933;
+}
+
+.glass-table tr:hover {
+  background: #23243A;
+}
+
+/* Status Badge Styles */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-active {
+  background: #233B36;
+  color: #30B39A;
+}
+
+.status-pending {
+  background: #3A3532;
+  color: #F2994A;
+}
+
+.status-inactive {
+  background: #3A232A;
+  color: #EF4444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .admin-main {
+    padding: 1rem;
+  }
+
+  .admin-header {
+    padding: 24px;
+  }
+
+  .admin-content-glass {
+    margin: 0 24px 24px 24px;
+    padding: 24px;
+  }
+}
+
+/* Animation for sidebar toggle */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} 
