@@ -216,15 +216,18 @@
   cursor: pointer;
 }
 
-.forgot-password {
-  color: #367AFF;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
+.login-forgot {
+  background: none;
+  border: none;
+  color: #5522CC;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
 }
 
-.forgot-password:hover {
-  color: #2461E3;
+.login-forgot:hover {
+  color: #ED4690;
 }
 
 .sign-in-btn {
@@ -758,14 +761,6 @@
   font-weight: 500;
   color: #232323;
   gap: 8px;
-}
-.login-forgot {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #367AFF;
-  text-decoration: underline;
-  text-align: center;
 }
 .login-signin-btn {
   width: 399px;

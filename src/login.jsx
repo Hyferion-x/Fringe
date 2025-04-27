@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
-import { FaFacebookF, FaGoogle, FaUserShield } from 'react-icons/fa';
+import { FaUserShield } from 'react-icons/fa';
 import posterImg from './resources/adelaide-fringe-poster.jpg';
 import { useNavigate } from 'react-router-dom';
 
@@ -85,7 +85,7 @@ const Login = () => {
                   <label className="login-keep-logged">
                     <input type="checkbox" /> Keep me logged in
                   </label>
-                  <a href="#" className="login-forgot">Forgot Password?</a>
+                  <button type="button" className="login-forgot">Forgot Password?</button>
                 </div>
                 <button type="submit" className="login-signin-btn">Sign in</button>
                 <div className="login-divider"><span>or</span></div>

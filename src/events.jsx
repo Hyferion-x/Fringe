@@ -7,7 +7,7 @@ import event3 from './resources/event3.jpg';
 import event4 from './resources/event4.jpg';
 import event5 from './resources/event5.jpg';
 import event6 from './resources/event6.jpg';
-import newsletterImage from './resources/Newsletter image.png';
+
 
 const events = [
   { id: 1, image: event1, day: '14', month: 'APR', title: 'Wonder Girls 2010 Wonder Girls World Tour San Francisco', description: "We'll get you directly seated and inside for you to enjoy the show." },
