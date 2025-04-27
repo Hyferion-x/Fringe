@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
-import { FaFacebookF, FaGoogle, FaUserShield } from 'react-icons/fa';
+import { FaUserShield } from 'react-icons/fa';
 import posterImg from './resources/adelaide-fringe-poster.jpg';
 import { useNavigate } from 'react-router-dom';
 
@@ -31,10 +31,10 @@ const Login = () => {
           </div>
           <div className="login-navbar-right">
             <a href="/">Home</a>
-            <a href="#shop">Shop</a>
-            <a href="#events">Events</a>
-            <a href="#ticket">Ticket</a>
-            <a href="#contact">Contact</a>
+            <a href="/shop">Shop</a>
+            <a href="/events">Events</a>
+            <a href="/tickets">Tickets</a>
+            <a href="/contact">Contact</a>
             <button className="login-nav-btn">Login</button>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Login = () => {
                   <label className="login-keep-logged">
                     <input type="checkbox" /> Keep me logged in
                   </label>
-                  <a href="#" className="login-forgot">Forgot Password?</a>
+                  <a href="/forgot-password" className="login-forgot">Forgot Password?</a>
                 </div>
                 <button type="submit" className="login-signin-btn">Sign in</button>
                 <div className="login-divider"><span>or</span></div>
@@ -119,22 +119,22 @@ const Login = () => {
           <div className="footer-section">
             <h3>Plan Events</h3>
             <ul>
-              <li><a href="#create">Create and Sign In</a></li>
-              <li><a href="#buy">Buy Tickets</a></li>
-              <li><a href="#online">Online RSVP</a></li>
-              <li><a href="#online">Online Events</a></li>
+              <li><a href="/create">Create and Sign In</a></li>
+              <li><a href="/tickets">Buy Tickets</a></li>
+              <li><a href="/rsvp">Online RSVP</a></li>
+              <li><a href="/online-events">Online Events</a></li>
             </ul>
           </div>
           <div className="footer-section">
             <h3>Eventick</h3>
             <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#press">Press</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#help">Help Center</a></li>
-              <li><a href="#how">How it Works</a></li>
-              <li><a href="#privacy">Privacy</a></li>
-              <li><a href="#terms">Terms</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/press">Press</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/help">Help Center</a></li>
+              <li><a href="/how-it-works">How it Works</a></li>
+              <li><a href="/privacy">Privacy</a></li>
+              <li><a href="/terms">Terms</a></li>
             </ul>
           </div>
           <div className="footer-section">
