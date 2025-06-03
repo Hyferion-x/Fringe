@@ -1,0 +1,61 @@
+{
+    "keepSettings": {
+        "type": 2,
+        "amount": 10
+    },
+    "auditFilename": "audit.json",
+    "hashType": "md5",
+    "extension": "",
+    "files": [
+        {
+            "date": 1748529020858,
+            "name": "middlewares/Logs/Success logs/success.log.20250530",
+            "hash": "be79c2003f3479af1eb504d89fb1a9c8"
+        },
+        {
+            "date": 1748529103069,
+            "name": "middlewares/Logs/Error logs/errors.log.20250530",
+            "hash": "604b396e308c78a83c3fe86dd12a924d"
+        },
+        {
+            "date": 1748658464628,
+            "name": "middlewares/Logs/Error logs/errors.log.20250531",
+            "hash": "be8b882525e723252501b288f34915c0"
+        },
+        {
+            "date": 1748658464632,
+            "name": "middlewares/Logs/Success logs/success.log.20250531",
+            "hash": "83f2494b4968d81f5d040b354251b859"
+        },
+        {
+            "date": 1748703544361,
+            "name": "middlewares/Logs/Success logs/success.log.20250601",
+            "hash": "161239a3c26405e2e0681ff28418b129"
+        },
+        {
+            "date": 1748741386256,
+            "name": "middlewares/Logs/Error logs/errors.log.20250601",
+            "hash": "6a7e5a4d626f4f2d32acf17e27218bfe"
+        },
+        {
+            "date": 1748789162080,
+            "name": "middlewares/Logs/Error logs/errors.log.20250602",
+            "hash": "c2e2e342f93ad628c9defd4a7b0ab18d"
+        },
+        {
+            "date": 1748789162083,
+            "name": "middlewares/Logs/Success logs/success.log.20250602",
+            "hash": "90ba35854ea008d602f414b24f11feb7"
+        },
+        {
+            "date": 1748925269680,
+            "name": "middlewares/Logs/Error logs/errors.log.20250603",
+            "hash": "d7812531f95fa7d670a1bf4d5c6eadea"
+        },
+        {
+            "date": 1748925269683,
+            "name": "middlewares/Logs/Success logs/success.log.20250603",
+            "hash": "e5880f345f169ff8773ca22cfb008aac"
+        }
+    ]
+}
